@@ -8,9 +8,53 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="p-4">
+		<div class="mx-auto max-w-[24.6rem] h-[88.5rem] bg-bambusBlue text-white">
+			<div class="header py-8 pl-4 pr-8 bg-bambusBlue flex justify-between items-center">
+				<div class="logo w-44">
+					<img src="/logo.svg" alt="logo" />
+				</div>
+				<div class="hamburger">
+					<img src="/hamburger.svg" alt="">
+				</div>
+			</div>
+			<div class="body py-28 relative bg-bambusBlue bg-[url('/images/front-page.png')] min-h-96 bg-blend-overlay bg-cover bg-[center_top_-8rem]">
+				<!-- <div class="absolute top-0 left-0 right-0 bottom-0 bg-bambusBlue backdrop-opacity-25"></div> -->
+				<h1 class="pb-28 text-4xl text-center font-heading">Vi bringer folk<br>sammen gjennom<br>gode matopplevelser</h1>
+				<!-- Rounded button -->
+				<div class="buttons flex flex-col gap-14">
+					<button class="mx-auto px-8 py-2 rounded-full bg-bambusLightBlue text-bambusBlue font-bold text-lg">Bestill takeaway</button>
+					<button class="mx-auto px-8 py-2 rounded-full border-2 text-white font-bold text-lg">Sandvika Flaggskiprestaurant</button>
+					<button class="mx-auto px-8 py-2 rounded-full border-2 text-white font-bold text-lg">Bambus restauranter</button>
+				</div>
+			</div>
+			<div class="footer py-10 px-6 bg-[url('/svg/footerbg.svg')] bg-no-repeat bg-right-top">
+				<div class="logo w-44 mb-12">
+					<img src="/logo.svg" alt="logo" />
+				</div>
+				<div class="links flex flex-col gap-4">
+					<a href="#" class="text-himmel underline font-light">Sandvika Flaggskiprestaurant</a>
+					<a href="#" class="text-himmel underline font-light">Bambusrestauranter</a>
+					<a href="#" class="text-himmel underline font-light">Ledige stillinger</a>
+					<a href="#" class="text-himmel underline font-light">Personvern</a>
+				</div>
+				<div class="separator h-1 w-12 bg-bambusPeach my-10"></div>
+				<p class="mb-1">Kontakt</p>
+				<p class="">Bambussushi.no</p>
+				<p class="">E-post: post@bambus.no</p>
+				<p class="">Telefon: 909 90 888</p>
+				<h2 class="mt-6">Følg oss</h2>
+				<div class="socials flex gap-6 py-4">
+					<img src="/svg/instagram.svg" alt="instagram" />
+					<img src="/svg/facebook.svg" alt="facebook" />
+					<img src="/svg/tiktok.svg" alt="tiktok" />
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
