@@ -1,0 +1,53 @@
+---
+const { color, value, index } = Astro.props;
+
+---
+<div class="w-full max-w-[440px] m-auto">
+  <h2 class="text-xl mb-4"> Nr. {index} ({value})</h2>
+<div class=`text-white ${color}`>
+  <div class="header py-8 pl-4 pr-8 flex justify-between items-center">
+    <div class="logo w-44">
+      <img src="/logo.svg" alt="logo" />
+    </div>
+    <div class="hamburger">
+      <img src="/hamburger.svg" alt="">
+    </div>
+  </div>
+  <div class="body py-28 px-4 relative bg-bambusBlue bg-[url('/images/front-page.png')] min-h-96 bg-blend-overlay bg-cover bg-[center_top_-8rem]">
+    <!-- <div class="absolute top-0 left-0 right-0 bottom-0 bg-bambusBlue backdrop-opacity-25"></div> -->
+    <h1 class="pb-28 text-4xl text-center font-heading">Vi bringer folk<br>sammen gjennom<br>gode matopplevelser</h1>
+    <!-- Rounded button -->
+    <div class="buttons flex flex-col gap-14">
+      <button class="mx-auto px-10 py-3 rounded-full bg-bambusLightBlue text-bambusBlue font-bold text-lg">Bestill takeaway</button>
+      <button class="mx-auto px-6 py-3 rounded-full border-2 text-white font-bold text-lg">Sandvika Flaggskiprestaurant</button>
+      <button class="flex items-center gap-2 mx-auto px-6 py-3 rounded-full border-2 text-white font-bold text-lg">
+        <img src="/svg/pin.svg" alt="pin" class="mr-2">
+        Bambus restauranter
+        <img src="/svg/chevron.svg" alt="pin" class="ml-2">
+      </button>
+    </div>
+  </div>
+  <div class="footer py-10 px-6 bg-[url('/svg/footerbg.svg')] bg-no-repeat bg-right-top">
+    <div class="logo w-44 mb-12">
+      <img src="/logo.svg" alt="logo" />
+    </div>
+    <div class="links flex flex-col gap-4">
+      <a href="#" class="text-himmel underline font-light">Sandvika Flaggskiprestaurant</a>
+      <a href="#" class="text-himmel underline font-light">Bambusrestauranter</a>
+      <a href="#" class="text-himmel underline font-light">Ledige stillinger</a>
+      <a href="#" class="text-himmel underline font-light">Personvern</a>
+    </div>
+    <div class="separator h-1 w-12 bg-bambusPeach my-6"></div>
+    <p class="mb-1">Kontakt</p>
+    <p class="">Bambussushi.no</p>
+    <p class="">E-post: post@bambus.no</p>
+    <p class="">Telefon: 909 90 888</p>
+    <h2 class="mt-6">Følg oss</h2>
+    <div class="socials flex gap-6 py-4">
+      <img src="/svg/instagram.svg" alt="instagram" />
+      <img src="/svg/facebook.svg" alt="facebook" />
+      <img src="/svg/tiktok.svg" alt="tiktok" />
+    </div>
+  </div>
+</div>
+</div>
