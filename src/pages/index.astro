@@ -2,7 +2,7 @@
 import FrontPage from '../components/front-page.astro';
 
 const colors = ['#354453', '#354461', '#172C54', '#1B3067']
-const classes = ['bg-[#354453]', 'bg-[#354461]', 'bg-[#172C54]', 'bg-[#1B3067]']
+const colors2 = ['#172C54', '#0E285C', '#142960', '#1B3067']
 ---
 
 <html lang="en">
@@ -18,7 +18,7 @@ const classes = ['bg-[#354453]', 'bg-[#354461]', 'bg-[#172C54]', 'bg-[#1B3067]']
 	</head>
 	<body class="pt-4 pb-20">
     <div class="grid grid-cols-[repeat(1,1fr)] min-[900px]:grid-cols-[repeat(2,26rem)] min-[1800px]:grid-cols-[repeat(4,26rem)] justify-center gap-x-10 gap-y-10">
-      {colors.map(color => <FrontPage color={"background-color:" + color + ";"} value={color} index={colors.indexOf(color) + 1}/>)}
+      {colors2.map(color => <FrontPage color={"background-color:" + color + ";"} value={color} index={colors2.indexOf(color) + 1}/>)}
     </div>
 	</body>
 </html>
